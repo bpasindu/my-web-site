@@ -160,8 +160,8 @@ nav a:hover::after {
 }
 
 .hero-image {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     margin: 0 auto 2rem;
     border: 4px solid transparent;
@@ -378,14 +378,16 @@ section {
 
 /* Individual skill colors based on percentage */
 .skill-card:nth-child(1) .progress-bar, /* C++ 90% */
-.skill-card:nth-child(2) .progress-bar  /* HTML5 90% */ {
+.skill-card:nth-child(2) .progress-bar, /* HTML5 90% */
+.skill-card:nth-child(3) .progress-bar  /* Java 90% */ {
     background: linear-gradient(90deg, #10b981, #34d399);
     box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
 }
 
-.skill-card:nth-child(3) .progress-bar, /* Java 80% */
 .skill-card:nth-child(4) .progress-bar, /* CSS3 80% */
-.skill-card:nth-child(6) .progress-bar  /* MySQL 80% */ {
+.skill-card:nth-child(6) .progress-bar, /* MySQL 80% */
+.skill-card:nth-child(8) .progress-bar, /* Git 80% */
+.skill-card:nth-child(10) .progress-bar /* React 80% */ {
     background: linear-gradient(90deg, #3b82f6, #60a5fa);
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
@@ -396,29 +398,27 @@ section {
 }
 
 .skill-card:nth-child(7) .progress-bar, /* PHP 50% */
-.skill-card:nth-child(8) .progress-bar  /* Git 50% */ {
+.skill-card:nth-child(9) .progress-bar  /* Python 60% */ {
     background: linear-gradient(90deg, #f97316, #fb923c);
     box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
 }
 
-.skill-card:nth-child(9) .progress-bar, /* Python 40% */
-.skill-card:nth-child(10) .progress-bar  /* React 40% */ {
-    background: linear-gradient(90deg, #ef4444, #f87171);
-    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
-}
+/* Python 40% and React 40% removed/moved up */
 
 /* Update skill percent colors to match */
 .skill-card:nth-child(1) .skill-percent,
-.skill-card:nth-child(2) .skill-percent {
+.skill-card:nth-child(2) .skill-percent,
+.skill-card:nth-child(3) .skill-percent {
     background: linear-gradient(135deg, #10b981, #34d399);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.skill-card:nth-child(3) .skill-percent,
 .skill-card:nth-child(4) .skill-percent,
-.skill-card:nth-child(6) .skill-percent {
+.skill-card:nth-child(6) .skill-percent,
+.skill-card:nth-child(8) .skill-percent,
+.skill-card:nth-child(10) .skill-percent {
     background: linear-gradient(135deg, #3b82f6, #60a5fa);
     -webkit-background-clip: text;
     background-clip: text;
@@ -433,20 +433,14 @@ section {
 }
 
 .skill-card:nth-child(7) .skill-percent,
-.skill-card:nth-child(8) .skill-percent {
+.skill-card:nth-child(9) .skill-percent {
     background: linear-gradient(135deg, #f97316, #fb923c);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.skill-card:nth-child(9) .skill-percent,
-.skill-card:nth-child(10) .skill-percent {
-    background: linear-gradient(135deg, #ef4444, #f87171);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+/* Red colors removed */
 
 /* Activities */
 .activities-list {
@@ -896,8 +890,8 @@ footer {
     }
 
     .hero-image {
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
         margin-bottom: 1.5rem;
     }
 
